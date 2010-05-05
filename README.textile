@@ -29,6 +29,8 @@ h4. Ihre Aufgabe
 
 Analysieren Sie die gegebene Log-Datei und untersuchen Sie, wann der Google-Bot die Webseite besucht hat.
 
+Die Log-Datei finden Sie im "log"-Ordner dieses Projekts.
+
 Um erkennen zu können, wann eine Anfrage von Google vorliegt, liest Ihr Programm eine Textdatei von der unten aufgeführten URL und vergleicht diese mit den Einträgen der Log-Datei.
 
 Vergleichskriterien sind Name des User Agents (Browserbezeichnung) sowie die IP-Adresse des Aufrufenden (Referrer).
