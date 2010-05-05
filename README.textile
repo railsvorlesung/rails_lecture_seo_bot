@@ -1,0 +1,45 @@
+h1. Übung zur Ruby on Rails Vorlesung der HTWdS - Julian Fischer
+
+Schwerpunkt der Übung: Ruby Grundlagen
+
+Fehlerbehandlung, Reguläre Ausdrücke, Datei- und HTTP-Zugriffe
+
+h2. Vorbereitung der Übung
+
+Erzeugen Sie einige Klassen und Module nach eigenem Belieben. Testen Sie die Mix-In-Funktionalität.
+
+Schauen Sie sich folgende Klassen in der Ruby Dokumentation (http://ruby-doc.org/core/) genau an. Sie werden diese für die folgende Übung benötigen:
+
+•	Array
+•	File
+•	Hash
+•	Net::HTTP
+•	Regexp
+•	String
+•	URI
+
+h2. Eigentliche Übung
+
+h3. Hintergrund
+
+Im Kontext der Suchmaschinenoptimierung (SEO) ist es wichtig den Suchmaschinen zu zeigen, dass ein Webprojekt stetig wächst. Die Suchmaschine kann zur Beurteilung des Wachstums natürlich nur die Informationen zu Rate ziehen, die ihr vorliegen. So wird ist es für diese Beurteilung entscheidend, wie sich das Webprojekt seit dem letzten Besuch des Such-Robots verändert hat. Von möglichen Aktualisierungen in der Zwischenzeit bekommt die Suchmaschine demnach nichts mit.
+Um vorhandene Inhalte also möglichst SEO-effizient zu platzieren, ist es notwendig zu wissen, wann der bzw. die Such-Robots das Web-Projekt besucht haben. So kann nach jedem Besuch neuer Inhalt freigeschaltet bzw. hinzugefügt werden.
+
+h4. Ihre Aufgabe
+
+Analysieren Sie die gegebene Log-Datei und untersuchen Sie, wann der Google-Bot die Webseite besucht hat.
+
+Um erkennen zu können, wann eine Anfrage von Google vorliegt, liest Ihr Programm eine Textdatei von der unten aufgeführten URL und vergleicht diese mit den Einträgen der Log-Datei.
+
+Vergleichskriterien sind Name des User Agents (Browserbezeichnung) sowie die IP-Adresse des Aufrufenden (Referrer).
+
+Stimmt entweder die IP-Adresse oder die Browserkennung mit einem der geladenen Werte überein, so geben Sie die betreffende Log-Zeie aus, indem Sie eine dafür vorgesehene Methode aufrufen. So ist es später möglich die Methode mit zusätzlicher Funktionalität zu versehen. Denkbar wäre das Versenden einer E-Mail bzw. das automatische Freischalten von Inhalt. 
+Die Blog-Software „Wordpress“ kann beispielsweise neue Einträge einfügen, die sie von einer vorher angegebenen E-Mail-Adresse abruft.
+
+Bemerkung: Die IP-Adresse ist sicherlich die zuverlässigere Information, da die Browserkennung leicht gefälscht werden kann.
+
+Verwenden Sie reguläre Ausdrücke um die Zeilen der Log-Datei zu zerlegen!
+
+Liste der Suchmaschinen URLs sowie User Agent Bezeichnungen:
+
+http://www.iplists.com/nw/google.txt
